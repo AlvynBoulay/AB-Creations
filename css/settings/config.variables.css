@@ -1,0 +1,23 @@
+/* couleurs */
+:root {
+  --color-primary: red;
+  --color-1: #1d1616;
+  --color-2: #ffffff;
+  --color-3: #d84040;
+  --color-4: #eeeeee;
+}
+
+:root {
+  --color-background-header: var(--color-1);
+}
+
+/* Typographie */
+:root {
+  --font-family: "Oswald", sans-serif;
+  --font-weight: normal;
+  --font-size: 16px;
+  --text-transform: uppercase;
+  --color: #ffffff;
+  --margin: 0 20px;
+  --text-decoration: none;
+}

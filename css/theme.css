@@ -1,0 +1,13 @@
+@import url("reset.css");
+@import url("settings/config.variables.css");
+@import url("settings/config.z-indexes.css");
+@import url("layout/header.css");
+@import url("components/navigation.css");
+@import url("components/layer.css");
+@import url("forms/buttons.css");
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}

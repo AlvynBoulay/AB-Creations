@@ -1,0 +1,46 @@
+body.has-menu-opened .main-nav {
+  display: block;
+}
+
+.main-nav {
+  position: absolute;
+  z-index: var(--z-index-main-nav);
+  background: #fff;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 20%;
+
+  display: none;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.main-nav ul li a {
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+
+  transition: linear all 0.2s;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.selected {
+  background: red;
+  color: #fff;
+}
+
+.main-nav_footer ul {
+  display: flex;
+  gap: 0.5rem;
+  padding: 5px;
+  margin: 5px;
+}
+
+.main-nav_footer li {
+  flex: 1;
+}

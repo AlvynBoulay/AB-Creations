@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-background-header);
+  height: 100px;
+  justify-content: space-between;
+}
+
+.header .logo {
+  display: flex;
+  height: 100px;
+  margin: 30px 10px;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+.header .openMainNav {
+  display: flex;
+  margin-right: 20px;
+  background-color: var(--color-2);
+}
