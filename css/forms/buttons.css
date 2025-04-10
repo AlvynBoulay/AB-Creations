@@ -13,3 +13,13 @@
   border-color: var(--color-1);
   color: var(--color-1);
 }
+
+.btn-RLN {
+  background-color: var(--color-3);
+  border-color: var(--color-1);
+  color: var(--color-1);
+  background-color: var(--color-3);
+  color: #eeeeee;
+  border: 2px solid #eeeeee;
+  border-radius: 20px;
+}
