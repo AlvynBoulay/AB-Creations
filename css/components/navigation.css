@@ -17,15 +17,20 @@ body.has-menu-opened .main-nav {
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .main-nav ul li a {
   display: block;
   padding: 15px 25px;
   text-decoration: none;
-
   transition: linear all 0.2s;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-nav ul li a {
+    color: rgb(255, 255, 255);
+  }
 }
 
 .main-nav ul li a:hover,
@@ -43,4 +48,39 @@ body.has-menu-opened .main-nav {
 
 .main-nav_footer li {
   flex: 1;
+}
+
+.openMainNav {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .openMainNav {
+    display: none;
+  }
+
+  .main-nav {
+    position: static;
+    height: auto;
+    background: none;
+    display: block;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav ul {
+    display: flex;
+  }
+
+  .closeMainNav {
+    display: none;
+  }
+
+  .openMainNav {
+    display: none;
+  }
 }

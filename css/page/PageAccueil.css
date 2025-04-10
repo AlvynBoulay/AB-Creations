@@ -1,0 +1,78 @@
+.AccueilTitle {
+  padding: 10px 10px;
+  font-family: "Lora", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #eeeeee;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.intro-text {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #2c2c2c;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  max-width: 700px;
+  padding: 5%;
+}
+.intro-text strong {
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+.AContactTitle {
+  padding: 10px 10px;
+  font-family: "Lora", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #eeeeee;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.AContactText {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #2c2c2c;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  max-width: 700px;
+  padding: 5%;
+}
+
+.AN-TITLE {
+  padding: 10px 10px;
+  font-family: "Lora", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #eeeeee;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.AN-TEXT {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: #2c2c2c;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  max-width: 700px;
+  padding: 5%;
+}
