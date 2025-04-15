@@ -9,3 +9,5 @@ let btnOpenMainNav = document.querySelector('.openMainNav');
 btnOpenMainNav.addEventListener('click', function() {
     document.body.classList.add('has-menu-opened')
 });
+
+
