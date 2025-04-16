@@ -1,4 +1,10 @@
+
 /* couleurs */
+$color-1: #d84040; 
+$color-2: #1D1616; 
+$color-3: #EEEEEE;
+$color-4: #8E1616;
+
 :root {
   --color-primary: red;
   --color-1: #1d1616;
@@ -21,3 +27,10 @@
   --margin: 0 20px;
   --text-decoration: none;
 }
+
+// === VARIABLES Page à-propos ===
+$red: #b12b2b;
+$white: #ffffff;
+$bg-gradient: linear-gradient(135deg, #f2d6cd, #c24444);
+$green: #36d46a;
+$card-bg: rgba(177, 43, 43, 0.9);

@@ -24,10 +24,11 @@ body.has-menu-opened .main-nav {
   display: block;
   padding: 15px 25px;
   text-decoration: none;
-  transition: linear all 0.2s;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  border-radius: 6px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .main-nav ul li a {
     color: rgb(255, 255, 255);
   }
@@ -37,6 +38,7 @@ body.has-menu-opened .main-nav {
 .main-nav ul li a.selected {
   background: red;
   color: #fff;
+  transform: translateY(-2px);
 }
 
 .main-nav_footer ul {
@@ -54,7 +56,7 @@ body.has-menu-opened .main-nav {
   display: block;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .openMainNav {
     display: none;
   }
@@ -82,5 +84,48 @@ body.has-menu-opened .main-nav {
 
   .openMainNav {
     display: none;
+  }
+}
+
+.openMainNav {
+  visibility: visible;
+}
+
+
+@media (min-width: 768px) {
+  .openMainNav {
+    visibility: hidden; 
+  }
+}
+
+.main-nav ul {
+  padding-top: 40px;
+}
+
+.main-nav ul li {
+  a {
+    position: relative;
+    transition: color 0.3s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 25px;
+      bottom: 10px;
+      height: 2px;
+      width: 0;
+      background-color: red;
+      transition: width 0.3s ease;
+    }
+
+    &:hover,
+    &.selected {
+      color: red;
+      background: none;
+
+      &::after {
+        width: calc(100% - 50px); // padding left + right
+      }
+    }
   }
 }

@@ -1,0 +1,67 @@
+/* Style général de bouton */
+.btn {
+  padding: 0.2rem 0.6rem; 
+  background-color: #eeeeee;
+  color: var(--color-3);
+  border: 2px solid var(--color-3);
+  border-radius: 12px; 
+  font-size: 8px; 
+  font-weight: 500; 
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  min-width: 100px; 
+
+  &:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  &:active {
+    transform: translateY(1px); 
+  }
+}
+
+/* Bouton Login */
+.btn-login {
+  background-color: var(--color-3);
+  border: 2px solid $color-4;  
+  color: var(--color-1);
+
+  &:hover {
+    background-color: var(--color-1);
+    color: var(--color-3);
+  }
+}
+
+
+.btn-signup {
+  background-color: #EEEEEE;
+  border: 2px solid $color-1;  
+  color: #8D4040;  
+
+  &:hover {
+    background-color: $color-3;
+    color: $color-1;  
+    border-color: $color-1;  
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav ul li .btn-signup { 
+    color: $color-1;  
+  }
+}
+
+
+ /* boutons page d'accueil */
+.btn-RLN {
+  background-color: var(--color-3);
+  border-color: var(--color-1);
+  color: var(--color-1);
+  background-color: var(--color-3);
+  color: #eeeeee;
+  border: 2px solid #eeeeee;
+  border-radius: 20px;
+}

@@ -1,0 +1,126 @@
+// === TITRE PRINCIPAL ===
+.ap-title {
+    text-align: center;
+    margin-top: 1rem;
+  
+    h1 {
+      font-size: 2rem;
+      color: $white;
+      background-color: $red;
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      border-radius: 0.5rem;
+      text-decoration: underline;
+      padding: 9px 100px;
+    }
+  }
+  
+ // === PARCOURS ARTISTIQUE ===
+.ap-container {
+    background-color: $card-bg; 
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin:30px 20px;
+  }
+  
+  .ap-subtitle {
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      margin: 0 auto 0.5rem;
+      color: $white;
+      text-decoration: underline;
+      padding: 10px 10px;
+    }
+  } 
+  
+  .ap-paragraph {
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: $white;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  
+// === NEWSLETTER COMBINÉE ===
+.newsletter-combined {
+    background-color: $card-bg;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    margin: 30px 20px;
+    line-height: 1.5;
+
+    // TITRE
+    h2 {
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 0 auto 0.5rem;
+        color: $white;
+        text-decoration: underline;
+        padding: 10px 10px;
+    }
+  
+    // PARAGRAPHE DE LA SECTION INFO
+    p {
+        font-size: 0.9rem;
+        color: $white;
+  
+        strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            padding: 10px 10px;
+            text-align: center;
+        }
+    }
+  
+    // FORMULAIRE
+    .newsletter-form {
+        form {
+            display: flex;
+            flex-direction: column;
+  
+            .form-group {
+                margin-bottom: 1rem;
+  
+                label {
+                    font-size: 0.9rem;
+                    margin-bottom: 0.3rem;
+                    display: block;
+                    color: $white;
+                    padding: 10px;
+                }
+  
+                input[type="checkbox"] {
+                    margin-right: 0.4rem;
+                }
+            }
+  
+            .input-large {
+                padding: 0.5rem;
+                border-radius: 0.4rem;
+                border: none;
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 0.8rem;
+                font-size: 1rem;
+            }
+  
+            .btn-newsletter {
+                width: 100%;
+                max-width: 250px;
+                padding: 0.6rem;
+                background-color: transparent;
+                color: $white;
+                border: 1px solid $white;
+                border-radius: 0.5rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background 0.3s;
+  
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+    }
+}

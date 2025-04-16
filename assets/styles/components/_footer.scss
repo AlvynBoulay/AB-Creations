@@ -33,3 +33,34 @@
   background-color: rgba(255, 255, 255, 0.3);
   color: #000;
 }
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.btnicon {
+  display: flex;
+  gap: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  .footer-inner {
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.btnreturn {
+  visibility: visible;
+}
+
+
+@media (min-width: 768px) {
+  .btnreturn {
+    visibility: hidden; 
+  }
+}

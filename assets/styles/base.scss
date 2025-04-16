@@ -3,21 +3,23 @@
 
 
 // Config  
-@import "settings/config.variables.css";
-@import "settings/config.z-indexes.css";
+@import "settings/config.variables";
+@import "settings/config.z-indexes";
 
 
 // Components
-@import "components/layer.css";
-@import "components/footer.css";
-@import "components/navigation.css";
+@import "components/layer";
+@import "components/footer";
+@import "components/navigation";
 
 
 // Layout
-@import "layout/header.css";
+@import "layout/header";
 
 // Forms & buttons
-@import "forms/buttons.css";
+@import "forms/buttons";
 
 // Pages specifics
-@import "page/PageAccueil.css";
+@import "page/home";
+@import "page/profil";
+@import "page/a-propos";

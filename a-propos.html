@@ -1,101 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=h, initial-scale=1.0" />
-    <meta name="description" content="AB Créations - À propos" />
-    <title>AB créations - À propos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AB Créations - Accueil" />
+    <title>Espace membre - AB créations</title>
     <link rel="shortcut icon" href="images/logoabcreation.png" />
+    <link rel="stylesheet" href="dist/css/theme.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <header>
+    <div class="img-fond">
+        <img src="images/fond.png" alt="fond" />
+    </div>
+
+    <header class="header">
         <div class="logo">
             <img src="images/logoabcreation.png" alt="logo AB créations" height="50" width="50" />
         </div>
-        <div><select name="menu" id="menu">
-                <option value="Accueil">Accueil</option>
-                <option value="portfolio">Portfolio</option>
-                <option value="À propos">À propos</option>
-                <option value="Contact">Contact</option>
-                <option value="Espace Membre">Espace Membre</option>
-                <option value="Mentions légales/CGU">Mentions légales/CGU</option>
-            </select>
-        </div>
-        <div>
-            <button class="Connexion" type="button">Se connecter</button>
-            <button class="Inscription" type="button">S'inscrire</button>
-        </div>
+
+        <nav class="main-nav" role="navigation">
+            <div class="main-nav__wrapper">
+                <div class="main-nav_header">
+                    <button class="closeMainNav">Fermer</button>
+                </div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="profil.html" class="selected">Espace membre</a></li>
+                </ul>
+                <div class="main-nav_footer">
+                    <ul>
+                        <li><a href="" class="btn btn-login">Se connecter</a></li>
+                        <li><a href="" class="btn btn-signup">S'inscrire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <button class="openMainNav">☰</button>
     </header>
-    <hr>
-    <h1>À propos</h1>
-    <h3>Mon Parcours Artistique :</h3>
-    <p>Passionné par l’art depuis toujours, j’ai suivi un chemin atypique, façonné par la curiosité et
-        l’expérimentation.
-        <br>
-        Autodidacte, j’ai appris à explorer différentes techniques et médiums, en me nourrissant
-        d’inspirations variées,
-        <br>
-        des grands maîtres classiques aux courants contemporains.
-        Au fil des années, j’ai affiné mon style à travers la pratique,
-        <br>
-        les essais et les erreurs, laissant mon instinct
-        guider mon évolution. Internet, les livres et l’observation du monde
-        <br>
-        qui m’entoure ont été mes meilleurs
-        professeurs, me permettant de développer une approche libre et personnelle de la création.
-    </p>
-    <hr>
-    <section>
-        <h2>📩 Ne manque rien de mon univers !</h2>
-        <p><strong>Reçois mes dernières créations, les coulisses de mon travail et des exclusivités directement dans ta
-                boîte
-                mail.</strong>
-            <br>
-            ✅ Découvre mes nouvelles créations en avant-première
-            <br>
-            ✅ Accède à du contenu inédit et des inspirations exclusives
-            <br>
-            ✅ Profite de surprises et d’offres spéciales 🎁
-            <br>
-            <br>
-            💡 Pas de spam, juste de l'inspiration !
-        </p>
-    </section>
-    <section>
-        <div class="">
-            <form action="" method="post" enctype="multipart/form-data">
-                <div class="">
-                    <label for="name">E-mail :</label> <br>
-                    <input type="text" name="nomcomplet" style="width: 700px; height: 40px;" required>
-                    <div class="">
+
+    <main>
+        <div class="ap-title">
+            <h1>À propos</h1>
+        </div>
+        <div class="ap-container">
+            <div class="ap-subtitle">
+                <h3>Mon Parcours Artistique :</h3>
+            </div>
+
+            <div class="ap-paragraph">
+                <p>
+                    Passionné par l’art depuis toujours, j’ai suivi un chemin atypique, façonné par la curiosité et
+                    l’expérimentation.
+                    Autodidacte, j’ai appris à explorer différentes techniques et médiums, en me nourrissant
+                    d’inspirations
+                    variées,
+                    des grands maîtres classiques aux courants contemporains. Au fil des années, j’ai affiné mon style à
+                    travers la pratique,
+                    les essais et les erreurs, laissant mon instinct guider mon évolution. Internet, les livres et
+                    qui m’entoure ont été mes meilleurs professeurs, me permettant de développer une approche libre et
+                    personnelle de la création.
+                </p>
+            </div>
+        </div>
+        <div class="newsletter-combined">
+            <h2>📩 Ne manque rien de mon univers !</h2>
+            <p>
+                <strong>Reçois mes dernières créations, les coulisses de mon travail et des exclusivités directement
+                    dans ta boîte mail.</strong>
+                <br>
+                ✅ Découvre mes nouvelles créations en avant-première<br>
+                ✅ Accède à du contenu inédit et des inspirations exclusives<br>
+                ✅ Profite de surprises et d’offres spéciales 🎁<br><br>
+                💡 Pas de spam, juste de l'inspiration !
+            </p>
+            <div class="newsletter-form">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name">E-mail :</label>
+                        <input type="text" name="nomcomplet" class="input-large" required>
+                    </div>
+
+                    <div class="form-group">
                         <label for="rgpd">
                             <input type="checkbox" id="rgpd" required>
                             J'autorise le traitement de mes données pour recevoir des offres commerciales et des
                             promotions.
                         </label>
                     </div>
-                    <br>
-                    <div class="">
-                        <button type="submit" name="newsletter" style="width: 200px; height: 50px;">S'abonner a la
+
+                    <div class="form-group">
+                        <button type="submit" name="newsletter" class="btn-newsletter">S'abonner à la
                             Newsletter</button>
                     </div>
-    </section>
-</body>
-<footer>
-    <hr>
-    <section>
-        <div>
-            <a href="Instagram">Instagram</a>
-            <br>
-            <a href="discord">Discord</a>
-            <br>
-            <a href="x">Twitter (X)</a>
-            <br>
-            <a href="flecheprecedent">Revenir a la page précédente</a>
+                </form>
+            </div>
         </div>
-    </section>
-</footer>
+    </main>
+
+    <footer class="footer">
+        <section class="footer-inner">
+            <div class="btnicon">
+                <a href="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="discord"><i class="fab fa-discord"></i></a>
+                <a href="x"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="btnreturn">
+                <a href="x"><i class="fa-solid fa-rotate-left"></i></a>
+            </div>
+        </section>
+    </footer>
+
+    <div class="layer"></div>
+    <script async src="dist/js/theme.js"></script>
+</body>
 
 </html>
