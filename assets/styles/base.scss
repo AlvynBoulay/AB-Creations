@@ -1,7 +1,23 @@
-@use 'elements/reset';
-@use 'elements/document';
+@import 'elements/reset';
+@import 'elements/document';
 
-@use 'settings/config.colors';
 
-@use 'components/sections';
+// Config  
+@import "settings/config.variables.css";
+@import "settings/config.z-indexes.css";
 
+
+// Components
+@import "components/layer.css";
+@import "components/footer.css";
+@import "components/navigation.css";
+
+
+// Layout
+@import "layout/header.css";
+
+// Forms & buttons
+@import "forms/buttons.css";
+
+// Pages specifics
+@import "page/PageAccueil.css";

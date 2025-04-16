@@ -1,0 +1,1 @@
+document.querySelector(".closeMainNav").addEventListener("click",(function(){document.body.classList.remove("has-menu-opened")})),document.querySelector(".openMainNav").addEventListener("click",(function(){document.body.classList.add("has-menu-opened")}));
