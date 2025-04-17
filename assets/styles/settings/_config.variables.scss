@@ -14,6 +14,18 @@ $color-4: #8E1616;
 }
 
 :root {
+  --color-red:          #d84040;
+  --color-darkbrown:    #8E1616;
+  --color-lightgrey:    #eee;
+  --color-darkgrey:     #1D1616;
+}
+
+$color-red:             #{var(--color-red)};
+$color-darkbrown:       #{var(--color-darkbrown)};
+$color-lightgrey:       #{var(--color-lightgrey)};
+$color-darkgrey:       #{var(--color-darkgrey)};
+
+:root {
   --color-background-header: var(--color-1);
 }
 

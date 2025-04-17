@@ -1,9 +1,10 @@
+
 /* Style général de bouton */
 .btn {
   padding: 0.2rem 0.6rem; 
-  background-color: #eeeeee;
-  color: var(--color-3);
-  border: 2px solid var(--color-3);
+  background-color: $color-lightgrey;
+  color: $color-red;
+  border: 2px solid $color-red;
   border-radius: 12px; 
   font-size: 8px; 
   font-weight: 500; 
@@ -21,47 +22,58 @@
   &:active {
     transform: translateY(1px); 
   }
+  
+}
+
+
+.btn-login,
+.btn-signup {
+  color: #fff;
+
+  @include media-min('tablet-up') {
+    font-size: 14px; 
+    padding: 0.4rem 1.2rem; 
+    min-width: 150px;  
+  }
+  
+  @include media-max('tablet-up') {
+    font-size: 20px; 
+  }
 }
 
 /* Bouton Login */
 .btn-login {
-  background-color: var(--color-3);
-  border: 2px solid $color-4;  
-  color: var(--color-1);
-
+  background-color: $color-red;
+  border: 2px solid $color-darkbrown;  
+  
   &:hover {
-    background-color: var(--color-1);
-    color: var(--color-3);
+    background-color: $color-darkgrey;
+    color: $color-red;
   }
 }
 
 
 .btn-signup {
-  background-color: #EEEEEE;
-  border: 2px solid $color-1;  
-  color: #8D4040;  
+  background-color: $color-lightgrey;
+  border: 2px solid $color-red;
+  color: $color-red;  
 
   &:hover {
-    background-color: $color-3;
-    color: $color-1;  
-    border-color: $color-1;  
+    background-color: $color-lightgrey;
+    color: $color-red;  
   }
 }
 
-@media screen and (min-width: 768px) {
-  .main-nav ul li .btn-signup { 
-    color: $color-1;  
-  }
-}
+
 
 
  /* boutons page d'accueil */
 .btn-RLN {
-  background-color: var(--color-3);
-  border-color: var(--color-1);
-  color: var(--color-1);
-  background-color: var(--color-3);
-  color: #eeeeee;
-  border: 2px solid #eeeeee;
+  background-color: $color-red;
+  border-color: $color-darkgrey;
+  color: $color-darkgrey;
+  background-color: $color-red;
+  color: $color-lightgrey;
+  border: 2px solid $color-lightgrey;
   border-radius: 20px;
 }

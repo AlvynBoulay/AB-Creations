@@ -13,20 +13,23 @@
   gap: 50px;
 }
 
-.footer a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 0.5rem;
-  border-radius: 50%;
-  transition: background-color 0.3s, color 0.3s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
+.footer {
+  a,
+  .footerLink {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
 
 .footer a:hover {

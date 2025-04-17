@@ -11,3 +11,14 @@ btnOpenMainNav.addEventListener('click', function() {
 });
 
 
+
+
+// Bouton Revenir a la page précédente 
+const btnReturn = document.querySelector('.btnreturn .footerLink');
+
+// Ajout d'un événement 
+if (btnReturn) {
+    btnReturn.addEventListener('click', function() {
+        window.history.back(); // Retourner à la page précédente
+    });
+}

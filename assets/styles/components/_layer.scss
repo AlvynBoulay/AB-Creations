@@ -16,3 +16,7 @@
 body.has-menu-opened .layer {
   display: block;
 }
+
+body.has-menu-opened {
+  overflow: hidden;
+}
