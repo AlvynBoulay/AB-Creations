@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AB Créations - Accueil" />
+    <title>Espace membre - AB créations</title>
+    <link rel="shortcut icon" href="images/logoabcreation.png" />
+    <link rel="stylesheet" href="dist/css/theme.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="img-fond">
+        <img src="images/fond.png" alt="fond" />
+    </div>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logoabcreation.png" alt="logo AB créations" height="50" width="50" />
+            </div>
+
+            <nav class="main-nav" role="navigation">
+                <div class="main-nav__wrapper">
+                    <div class="main-nav_header">
+                        <button class="closeMainNav">❌</button>
+                    </div>
+                    <ul>
+                        <li><a href="index.html" title="">Accueil</a></li>
+                        <li><a href="portfolio.html" title="">Portfolio</a></li>
+                        <li><a href="a-propos.html" title="">A propos</a></li>
+                        <li><a href="contact.html" title="">Contact</a></li>
+                        <li><a href="profil.html" class="selected" title="">Espace membre</a></li>
+                    </ul>
+                    <div class="main-nav_footer">
+                        <ul>
+                            <li><a href="" class="btn btn-login">Se connecter</a></li>
+                            <li><a href="" class="btn btn-signup">S'inscrire</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <button class="openMainNav">☰</button>
+        </header>
+        <main class="login-container">
+            <div class="login-box">
+                <h1>Connexion à votre compte</h1>
+                <form>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Se souvenir de moi</label>
+                    </div>
+
+                    <button type="submit" class="login-button">Se connecter</button>
+                </form>
+
+                <p class="no-account">Vous n’avez pas de compte ? <a href="#" class="create-link">Créez-en un !</a></p>
+            </div>
+        </main>
+        <footer class="footer">
+            <section class="footer-inner">
+                <div class="btnicon">
+                    <a href="https://www.instagram.com/alv.bou?igsh=aXk1enJqcXM3ZHhs&utm_source=qr">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://discord.gg/j2kG4fFrNX">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://x.com/z3s_2?s=21">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="btnreturn">
+                    <a href="x">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </a>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <div class="layer"></div>
+    <script async src="dist/js/theme.js"></script>
+</body>
+
+</html>
