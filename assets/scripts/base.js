@@ -22,3 +22,6 @@ if (btnReturn) {
         window.history.back(); // Retourner à la page précédente
     });
 }
+
+
+
