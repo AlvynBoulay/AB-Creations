@@ -17,9 +17,7 @@
 </head>
 
 <body>
-    <div class="img-fond">
-        <img src="images/fond.png" alt="fond" />
-    </div>
+    <div class="img-fond"></div>
     <div class="page-wrapper">
         <header class="header">
             <div class="logo">
@@ -31,13 +29,7 @@
                     <div class="main-nav_header">
                         <button class="closeMainNav">❌</button>
                     </div>
-                    <ul>
-                        <li><a href="index.html" title="">Accueil</a></li>
-                        <li><a href="portfolio.html" title="">Portfolio</a></li>
-                        <li><a href="a-propos.html" title="">A propos</a></li>
-                        <li><a href="contact.html" title="">Contact</a></li>
-                        <li><a href="profil.html" class="selected" title="">Espace membre</a></li>
-                    </ul>
+                    <div id="menu"></div>
                     <div class="main-nav_footer">
                         <ul>
                             <li><a href="page-connexion.html" class="btn btn-login">Se connecter</a></li>
@@ -85,6 +77,7 @@
                 </p>
             </form>
         </main>
+        <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
         <footer class="footer">
             <section class="footer-inner">
                 <div class="btnicon">
@@ -108,6 +101,7 @@
     </div>
     <div class="layer"></div>
     <script async src="dist/js/theme.js"></script>
+    <script src="assets/scripts/btnRetourEnHaut.js"></script>
 </body>
 
 </html>

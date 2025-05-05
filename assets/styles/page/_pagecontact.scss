@@ -1,7 +1,4 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
+
 
 .contact-container {
     display: flex;
@@ -12,7 +9,9 @@ body {
 }
 
 .contact-box {
-    background: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 30px;
     width: 100%;
     max-width: 500px;
@@ -155,4 +154,72 @@ input[type="checkbox"]:checked::before {
 .btnicon a:hover {
     background-color: #8b0000;
     transform: scale(1.1);
+}
+
+/* VERSION DESKTOP */
+@media (min-width: 768px) {
+    .contact-container {
+        padding: 40px; 
+    }
+
+    .contact-box {
+        max-width: 700px; 
+        padding: 40px; 
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); 
+        border-radius: 20px; 
+    }
+
+    /* TITRE */
+    .contact-box h1 {
+        font-size: 2rem; 
+        margin-bottom: 2rem;
+        color: #444; 
+    }
+
+    /* INPUTS ET TEXTAREA */
+    .contact-box input[type="text"],
+    .contact-box input[type="email"],
+    .contact-box input[type="tel"],
+    .contact-box textarea {
+        padding: 15px; 
+        font-size: 1.1rem; 
+        margin-top: 12px;
+    }
+
+    /* RGPD */
+    .contact-rgpd {
+        font-size: 1rem; 
+    }
+
+    /* BOUTON DE SOUMISSION */
+    .contact-button {
+        padding: 15px 25px; 
+        font-size: 1.1rem; 
+        margin-top: 2rem; 
+    }
+
+    /* CONTACT VIA RÉSEAUX */
+    .contact-via {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        background-color: rgba(139, 0, 0, 0.9); 
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-via h2 {
+        font-size: 2rem; /* Titre plus grand */
+        padding: 1rem;
+    }
+
+    .btnicon a {
+        width: 60px; /* Boutons plus larges */
+        height: 60px; /* Boutons plus grands */
+        font-size: 1.5rem; /* Plus de taille pour les icônes */
+    }
+
+    .btnicon a:hover {
+        transform: scale(1.2); /* Agrandir au survol */
+    }
 }

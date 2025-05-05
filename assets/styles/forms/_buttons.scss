@@ -30,6 +30,7 @@
 .btn-signup {
   color: #fff;
 
+
   @include media-min('tablet-up') {
     font-size: 14px; 
     padding: 0.4rem 1.2rem; 
@@ -37,14 +38,14 @@
   }
   
   @include media-max('tablet-up') {
-    font-size: 20px; 
+    font-size: 15px; 
   }
 }
 
 /* Bouton Login */
 .btn-login {
   background-color: $color-red;
-  border: 2px solid $color-darkbrown;  
+  border: 2px solid $color-darkbrown;
   
   &:hover {
     background-color: $color-darkgrey;
@@ -65,15 +66,48 @@
 }
 
 
-
-
- /* boutons page d'accueil */
+/* boutons page d'accueil */
 .btn-RLN {
-  background-color: $color-red;
-  border-color: $color-darkgrey;
-  color: $color-darkgrey;
   background-color: $color-red;
   color: $color-lightgrey;
   border: 2px solid $color-lightgrey;
   border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 33%;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.btn-RLN.btn2 {
+margin-top: 10%;
+}
+
+// Bouton retour en haut 
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  background-color: var(--color-3);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none; 
+  z-index: 1000;
+}
+
+#scrollToTopBtn:hover {
+  background-color: var(--color-darkbrown);
 }

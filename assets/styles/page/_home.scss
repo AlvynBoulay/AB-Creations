@@ -64,3 +64,58 @@
   padding-bottom: 3%;
   padding: 5%;
 }
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .container-A {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .AccueilTitle h1,
+  .AContactTitle h2,
+  .AN-TITLE h2 {
+    font-size: 2.3rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .intro-text,
+  .AContactText,
+  .AN-TEXT {
+    font-size: 1.2rem;
+    color: #1c1c1c;
+    line-height: 1.8;
+    padding: 2rem;
+  }
+
+  .btn-RLN,
+  .btn-RLN.btn2,
+  .voirlescreations {
+    background: #3e3e3e;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .btn-RLN:hover,
+  .btn-RLN.btn2:hover,
+  .voirlescreations:hover {
+    background: #1c1c1c;
+  }
+}

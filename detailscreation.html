@@ -17,9 +17,7 @@
 </head>
 
 <body>
-    <div class="img-fond">
-        <img src="images/fond.png" alt="fond" />
-    </div>
+    <div class="img-fond"></div>
     <header class="header">
         <div class="logo">
             <img src="images/logoabcreation.png" alt="logo AB créations" height="50" width="50" />
@@ -29,13 +27,7 @@
                 <div class="main-nav_header">
                     <button class="closeMainNav">❌</button>
                 </div>
-                <ul>
-                    <li><a href="index.html" title="" class="selected">Accueil</a></li>
-                    <li><a href="portfolio.html" title="">Portfolio</a></li>
-                    <li><a href="a-propos.html" title="">A propos</a></li>
-                    <li><a href="contact.html" title="">Contact</a></li>
-                    <li><a href="profil.html" title="">Espace membre</a></li>
-                </ul>
+                <div id="menu"></div>
                 <div class="main-nav_footer">
                     <ul>
                         <li><a href="page-connexion.html" class="btn btn-login">Se connecter</a></li>
@@ -75,22 +67,21 @@
         <div class="comments-slider">
             <!-- Premier commentaire -->
             <div class="comment-slide active-slide">
-                <img src="avatar1.jpg" alt="Avatar" class="comment-avatar" />
+                <img src="images/account_circle.png" alt="Avatar" class="comment-avatar" />
                 <div class="comment-content">
                     <strong class="comment-author">ExempleCommentaire</strong>
                     <p class="comment-text">
-                        J’adore ton dessin ! Les détails et les couleurs apportent vraiment une belle ambiance. Bravo
-                        pour ton talent ! 🧡✨
+                        Bien
                     </p>
                 </div>
             </div>
             <!-- Deuxième commentaire -->
             <div class="comment-slide">
-                <img src="avatar2.jpg" alt="Avatar" class="comment-avatar" />
+                <img src="images/account_circle.png" alt="Avatar" class="comment-avatar" />
                 <div class="comment-content">
                     <strong class="comment-author">Autre personne</strong>
                     <p class="comment-text">
-                        Le style est trop cool ! T'as un vrai talent 🔥
+                        je suis un commentaire.
                     </p>
                 </div>
             </div>
@@ -105,6 +96,7 @@
             <button id="addCommentBtn" class="comment-submit">Ajouter un commentaire</button>
         </div>
     </section>
+    <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
     <footer class="footer">
         <section class="footer-inner">
             <div class="btnicon">
@@ -122,6 +114,7 @@
     <div class="layer"></div>
     <script async src="dist/js/theme.js"></script>
     <script src="scripts/slidercomment.js" defer></script>
+    <script src="assets/scripts/btnRetourEnHaut.js"></script>
 </body>
 
 </html>

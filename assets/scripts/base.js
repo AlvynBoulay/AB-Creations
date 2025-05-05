@@ -1,13 +1,17 @@
+import "./components/Menu";
+
 let btnCloseMainNav = document.querySelector('.closeMainNav');
 
 btnCloseMainNav.addEventListener('click', function() {
-    document.body.classList.remove('has-menu-opened')
+    document.body.classList.remove('has-menu-opened');
+    body.classList.remove('no-scroll'); 
 });
 
 let btnOpenMainNav = document.querySelector('.openMainNav');
 
 btnOpenMainNav.addEventListener('click', function() {
-    document.body.classList.add('has-menu-opened')
+    document.body.classList.add('has-menu-opened');
+    body.classList.add('no-scroll');
 });
 
 

@@ -1,0 +1,96 @@
+/* Search Bar */
+.search-bar {
+    display: flex;
+    margin: 1rem;
+    position: relative;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .clear-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+  }
+  
+  /* Créations */
+  .creations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .creation-card {
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid var(--color-1); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .creation-card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .details-button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #1a1a1a;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .page-button,
+  .next-button {
+    background-color: #aa1c1c;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .page-button.active {
+    background-color: #fff;
+    color: #aa1c1c;
+  }
+
+  .details-button {
+    width: 100%;
+    padding: 0.6rem;
+    background-color: var(--color-darkbrown);
+    border: 1px solid var(--color-darkbrown);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0 0 15px 15px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .details-button:hover {
+    background-color: white;
+    color: #000;
+  }

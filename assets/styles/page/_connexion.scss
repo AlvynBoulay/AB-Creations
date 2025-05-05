@@ -32,6 +32,7 @@ html, body {
     font-size: 1.4rem;
     text-decoration: underline;
     margin-bottom: 2rem;
+    color: var(--color-1)
   }
   
   form {
@@ -45,6 +46,7 @@ html, body {
     font-size: 1.05rem;
     font-weight: 500;
     margin-bottom: 0.3rem;
+    color: #000;
   }
   
   input[type="email"],
@@ -121,6 +123,7 @@ html, body {
   .no-account {
     font-size: 1rem;
     margin-top: 2rem;
+    color: #000;
   }
   
   .create-link {
