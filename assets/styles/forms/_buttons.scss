@@ -57,7 +57,8 @@
 .btn-signup {
   background-color: $color-lightgrey;
   border: 2px solid $color-red;
-  color: $color-red;  
+  color: $color-red; 
+  text 
 
   &:hover {
     background-color: $color-lightgrey;
@@ -74,14 +75,16 @@
   border-radius: 20px;
   padding: 6px 12px;
   font-size: 14px;
-  display: inline-block;
+  display: block;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  margin-left: 33%;
+  margin: 15px auto 10px auto;
+  width: fit-content;       
+  max-width: 80%;           
+  padding-left: 20px;       
+  padding-right: 20px;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -89,8 +92,9 @@
 }
 
 .btn-RLN.btn2 {
-margin-top: 10%;
+  margin-top: 10%;
 }
+
 
 // Bouton retour en haut 
 #scrollToTopBtn {

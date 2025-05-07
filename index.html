@@ -61,10 +61,39 @@
                 la possibilité de commandes personnalisées.
             </p>
         </div>
-        <div>
-            <h2>Galerie d’aperçus</h2>
-        </div>
-        <button class="voirlescreations" type="button">Voir les créations</button>
+        <!-- Conteneur de la galerie d'images -->
+        <div class="image-gallery-container">
+            <div class="titleGalerie">
+                <h2>Galerie d'aperçus</h2>
+            </div>
+            <!-- Miniatures des images -->
+            <div class="thumbnail-row">
+                <div class="thumbnail-column">
+                    <img class="thumbnail demo cursor" src="images/imgCreation/img1.jpg" alt="Image1"
+                        onclick="currentSlide(1)">
+                </div>
+                <div class="thumbnail-column">
+                    <img class="thumbnail demo cursor" src="images/imgCreation/img2.jpg" alt="Image2"
+                        onclick="currentSlide(2)">
+                </div>
+                <div class="thumbnail-column">
+                    <img class="thumbnail demo cursor" src="images/imgCreation/img3.jpg" alt="Image3"
+                        onclick="currentSlide(3)">
+                </div>
+                <div class="thumbnail-column">
+                    <img class="thumbnail demo cursor" src="images/imgCreation/img4.jpg" alt="Image4"
+                        onclick="currentSlide(4)">
+                </div>
+                <div class="thumbnail-column">
+                    <img class="thumbnail demo cursor" src="images/imgCreation/img5.jpg" alt="Image5"
+                        onclick="currentSlide(5)">
+                </div>
+                <div class="thumbnail-column">
+                    <img class="thumbnail demo cursor" src="images/imgCreation/img6.jpg" alt="Image6"
+                        onclick="currentSlide(6)">
+                </div>
+            </div>
+            <a href="portfolio.html" class="btn-creation">Voir les créations</a>
         </div>
         <div class="container container-A">
             <div class="AContactTitle">
@@ -120,6 +149,7 @@
     <div class="layer"></div>
     <script async src="dist/js/theme.js"></script>
     <script src="assets/scripts/btnRetourEnHaut.js"></script>
+    <script src="assets/scripts/galeriedapercu.js"></script>
 </body>
 
 </html>

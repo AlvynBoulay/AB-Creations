@@ -94,3 +94,62 @@
     background-color: white;
     color: #000;
   }
+
+  @media (min-width: 1024px) {
+    /* Search Bar */
+    .search-bar {
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+  
+    .search-bar input {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
+  
+    .clear-button {
+      font-size: 1.4rem;
+      right: 15px;
+    }
+  
+    /* Créations */
+    .creations-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      padding: 2rem 4rem;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+  
+    .creation-card {
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+  
+    .creation-card:hover {
+      transform: scale(1.02);
+    }
+  
+    .creation-card img {
+      border-bottom: 1px solid #444;
+    }
+  
+    .details-button {
+      font-size: 1.1rem;
+      padding: 0.8rem;
+    }
+  
+    /* Pagination */
+    .pagination {
+      margin: 2rem auto;
+      gap: 1rem;
+      font-size: 1.1rem;
+    }
+  
+    .page-button,
+    .next-button {
+      padding: 0.6rem 1rem;
+    }
+  }

@@ -65,57 +65,70 @@
   padding: 5%;
 }
 
+
+
 /* Desktop */
-@media screen and (min-width: 1024px) {
-  .container-A {
-    max-width: 900px;
+@media (min-width: 1024px) {
+  body {
+    font-size: 1rem;
+    background-size: cover;
+  }
+
+  .container.container-A {
+    max-width: 1100px;
     margin: 0 auto;
-    border-radius: 16px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-    padding: 3rem;
-    backdrop-filter: blur(6px);
-    transition: all 0.3s ease-in-out;
-  }
-
-  .AccueilTitle h1,
-  .AContactTitle h2,
-  .AN-TITLE h2 {
-    font-size: 2.3rem;
-    color: #222;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  }
-
-  .intro-text,
-  .AContactText,
-  .AN-TEXT {
-    font-size: 1.2rem;
-    color: #1c1c1c;
-    line-height: 1.8;
     padding: 2rem;
   }
 
-  .btn-RLN,
-  .btn-RLN.btn2,
-  .voirlescreations {
-    background: #3e3e3e;
-    color: #fff;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: background 0.3s;
-    cursor: pointer;
-    display: inline-block;
+  /* Titre d'accueil */
+  .AccueilTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  /* Texte d’introduction */
+  .intro-text {
+    font-size: 1.2rem;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+
+  /* Galerie */
+  .image-gallery-container {
+    max-width: 1100px;
+    margin: 0 auto 4rem auto;
     text-align: center;
   }
 
-  .btn-RLN:hover,
-  .btn-RLN.btn2:hover,
-  .voirlescreations:hover {
-    background: #1c1c1c;
+  .thumbnail-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
   }
+
+  .thumbnail-column {
+    flex: 0 0 calc(16.66% - 1rem); /* 6 par ligne */
+  }
+
+  /* Section Contact + Newsletter */
+  .AContactTitle,
+  .AN-TITLE {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .AContactText,
+  .AN-TEXT {
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .btn-RLN {
+    margin-top: 1rem;
+  }
+
 }
