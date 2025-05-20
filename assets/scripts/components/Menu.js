@@ -1,4 +1,4 @@
-import { links } from "../data/navigation";
+import { links } from "../data/navigation.js";
 
 /* <ul>
 <li><a href="index.html" title="" class="selected">Accueil</a></li>

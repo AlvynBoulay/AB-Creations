@@ -1,3 +1,4 @@
+<?php require_once("config/settings.php"); ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -6,8 +7,8 @@
     <meta name="viewport" content="width=h, initial-scale=1.0" />
     <meta name="description" content="AB Créations - Accueil" />
     <title>AB créations - Accueil</title>
-    <link rel="shortcut icon" href="images/logoabcreation.png" />
-    <link rel="stylesheet" href="dist/css/theme.css" type="text/css">
+    <link rel="shortcut icon" href="<?php echo img_dir; ?>logoabcreation.png" />
+    <link rel="stylesheet" href="<?php echo css_dir; ?>theme.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +21,7 @@
     <div class="img-fond"></div>
     <header class="header">
         <div class="logo">
-            <img src="images/logoabcreation.png" alt="logo AB créations" height="50" width="50" />
+            <img src="<?php echo img_dir; ?>logoabcreation.png" alt="logo AB créations" height="50" width="50" />
         </div>
 
         <nav class="main-nav" role="navigation">
@@ -69,27 +70,27 @@
             <!-- Miniatures des images -->
             <div class="thumbnail-row">
                 <div class="thumbnail-column">
-                    <img class="thumbnail demo cursor" src="images/imgCreation/img1.jpg" alt="Image1"
+                    <img class="thumbnail demo cursor" src="<?php echo img_dir; ?>imgCreation/img1.jpg" alt="Image1"
                         onclick="currentSlide(1)">
                 </div>
                 <div class="thumbnail-column">
-                    <img class="thumbnail demo cursor" src="images/imgCreation/img2.jpg" alt="Image2"
+                    <img class="thumbnail demo cursor" src="<?php echo img_dir; ?>imgCreation/img2.jpg" alt="Image2"
                         onclick="currentSlide(2)">
                 </div>
                 <div class="thumbnail-column">
-                    <img class="thumbnail demo cursor" src="images/imgCreation/img3.jpg" alt="Image3"
+                    <img class="thumbnail demo cursor" src="<?php echo img_dir; ?>imgCreation/img3.jpg" alt="Image3"
                         onclick="currentSlide(3)">
                 </div>
                 <div class="thumbnail-column">
-                    <img class="thumbnail demo cursor" src="images/imgCreation/img4.jpg" alt="Image4"
+                    <img class="thumbnail demo cursor" src="<?php echo img_dir; ?>imgCreation/img4.jpg" alt="Image4"
                         onclick="currentSlide(4)">
                 </div>
                 <div class="thumbnail-column">
-                    <img class="thumbnail demo cursor" src="images/imgCreation/img5.jpg" alt="Image5"
+                    <img class="thumbnail demo cursor" src="<?php echo img_dir; ?>imgCreation/img5.jpg" alt="Image5"
                         onclick="currentSlide(5)">
                 </div>
                 <div class="thumbnail-column">
-                    <img class="thumbnail demo cursor" src="images/imgCreation/img6.jpg" alt="Image6"
+                    <img class="thumbnail demo cursor" src="<?php echo img_dir; ?>imgCreation/img6.jpg" alt="Image6"
                         onclick="currentSlide(6)">
                 </div>
             </div>
@@ -128,27 +129,12 @@
             </div>
         </div>
     </section>
-    <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
-    <footer class="footer">
-        <section>
-            <div>
-                <a href="https://www.instagram.com/alv.bou?igsh=aXk1enJqcXM3ZHhs&utm_source=qr">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://discord.gg/j2kG4fFrNX">
-                    <i class="fab fa-discord"></i>
-                </a>
-                <a href="https://x.com/z3s_2?s=21">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </section>
-    </footer>
+    <?php include ('templates/footer.php'); ?>
 
     <div class="layer"></div>
-    <script async src="dist/js/theme.js"></script>
-    <script src="assets/scripts/btnRetourEnHaut.js"></script>
-    <script src="assets/scripts/galeriedapercu.js"></script>
+    <script async src="<?php echo js_dir; ?>theme.js"></script>
+    <script src="../assets/scripts/btnRetourEnHaut.js"></script>
+    <script src="../assets/scripts/galeriedapercu.js"></script>
 </body>
 
 </html>

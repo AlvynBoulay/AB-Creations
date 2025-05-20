@@ -63,6 +63,7 @@
   padding-top: 1%;
   padding-bottom: 3%;
   padding: 5%;
+  text-align: center;
 }
 
 
@@ -74,12 +75,36 @@
     background-size: cover;
   }
 
-  .container.container-A {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem;
+.row {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  min-height: 100%; /* important */
+}
+
+  #cont1 {
+ max-width: 1000px;
+ margin-top: 20px;
+ margin-bottom: 50px;
   }
 
+#cont2, #cont3 {
+  flex: 1;
+  max-width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* force la même hauteur */
+}
+ #cont2 {
+  height: auto;
+ }
+
+ .container.container-A {
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 2rem;
+  }
   /* Titre d'accueil */
   .AccueilTitle {
     font-size: 2rem;
@@ -96,7 +121,7 @@
 
   /* Galerie */
   .image-gallery-container {
-    max-width: 1100px;
+ max-width: 1500px;
     margin: 0 auto 4rem auto;
     text-align: center;
   }
@@ -122,6 +147,7 @@
 
   .AContactText,
   .AN-TEXT {
+    text-align: center;
     padding: 0;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -131,4 +157,11 @@
     margin-top: 1rem;
   }
 
+  .AContactTitle {
+    margin-bottom: 10px;
+  }
+
+  #btnContact {
+    margin-top: 45px;
+  }
 }
