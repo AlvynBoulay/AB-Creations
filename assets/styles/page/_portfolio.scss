@@ -142,14 +142,33 @@
     }
   
     /* Pagination */
-    .pagination {
-      margin: 2rem auto;
-      gap: 1rem;
-      font-size: 1.1rem;
-    }
-  
-    .page-button,
-    .next-button {
-      padding: 0.6rem 1rem;
-    }
+/* CSS */
+.pagination {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background: #007bff;
+  color: white;
+  border-color: #006ae6;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+
   }
